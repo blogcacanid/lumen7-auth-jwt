@@ -24,7 +24,4 @@ $router->group(['prefix' => 'api/auth'], function () use ($router)
 $router->group(['prefix' => 'api/test'], function () use ($router) 
 {
 	$router->get('all', 'AuthController@allAccess');
-	$router->get('user', 'AuthController@userBoard');
-	$router->get('mod', 'AuthController@moderatorBoard');
-	$router->get('admin', 'AuthController@adminBoard');
 });
